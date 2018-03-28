@@ -1,1 +1,10 @@
 <h1>Hello World</h1>
+<script>
+  fetch('http://localhost/api/deviceInfo')
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(myJson) {
+    console.log(myJson);
+  })
+</script>
