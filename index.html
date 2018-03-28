@@ -2,9 +2,6 @@
 <script>
   fetch('https://10.216.136.85/api/deviceInfo')
   .then(function(response) {
-    return response.json();
-  })
-  .then(function(myJson) {
-    console.log(myJson);
+    console.log(response)
   })
 </script>
